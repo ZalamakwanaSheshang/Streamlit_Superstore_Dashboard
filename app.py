@@ -149,11 +149,11 @@ fig1 = px.scatter(filtered_df, x="Sales", y="Profit", size="Quantity")
 
 # line is updated here
 fig1.update_layout(title={ "text": "Relationship between Sales and Profits using Scatter Plot.",
-                       "font": {"size": 20, "color": "darkblue", "family": "Arial"}},
+                       "font": {"size": 20, "color": "lightblue", "family": "Arial"}},
                    # xaxis=dict(title="Sales"),
                    # yaxis=dict(title="Profit")
-                   xaxis=dict(title="Sales", title_font=dict(size=16, color="darkgreen", family="Verdana")),
-                   yaxis=dict(title="Profit", title_font=dict(size=16, color="darkgreen", family="Verdana"))
+                   xaxis=dict(title="Sales", title_font=dict(size=16, color="skyblue", family="Verdana")),
+                   yaxis=dict(title="Profit", title_font=dict(size=16, color="skyblue", family="Verdana"))
                   )
 st.plotly_chart(fig1, use_container_width=True)
 
